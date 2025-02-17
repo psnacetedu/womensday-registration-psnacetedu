@@ -24,8 +24,8 @@ const facultySports = [{name: 'Badminton',time:'3.30 pm to 4.20 pm ',date:'24-26
     {name:'Chess',time:'3.30 pm to 4.20 pm ',date:'24-26th feb',place:'SRL Audithorium',head:'Ms.Athira manoj,ECE',contact:'8500437000'},
     {name:'Table Tennis',time:'3.30 pm to 4.20 pm ',date:'24-26th feb',place:'SRL Audithorium',head:'Ms.Athira manoj,ECE',contact:'8500437000'},
     {name:'Basketball Free-throw shooting',time:'3.30 pm to 4.20 pm ',date:'24-26th feb',place:'SRL Audithorium',head:'Ms.Athira manoj,ECE',contact:'8500437000'},
-    {name:'Tennikoit ball',time:'3.30 pm to 4.20 pm ',date:'24-26th feb',place:'SRL Audithorium',head'Ms.Athira manoj,ECE',contact:'8500437000'},
-    {name:'Throw ball',time:'3.30 pm to 4.20 pm ',date:'24-26th feb',place:'SRL Audithorium',head'Ms.Athira manoj,ECE',contact:'8500437000'},
+    {name:'Tennikoit ball',time:'3.30 pm to 4.20 pm ',date:'24-26th feb',place:'SRL Audithorium',head:'Ms.Athira manoj,ECE',contact:'8500437000'},
+    {name:'Throw ball',time:'3.30 pm to 4.20 pm ',date:'24-26th feb',place:'SRL Audithorium',head:'Ms.Athira manoj,ECE',contact:'8500437000'},
     ];
 
 document.getElementById("faculty-events").innerHTML = facultyEvents.map(event => `<a href="events/faculty/Dance-Group.html" style="text-decoration:none;" onclick="setVariable('${event.name}','${event.time}','${event.contact}','${event.date}','${event.head}');"><li>${event.name}</li></a>`).join('');
