@@ -30,7 +30,7 @@ const facultySports = [{name: 'Badminton',time:'3.30 pm to 4.20 pm ',date:'26-28
 
 document.getElementById("faculty-events").innerHTML = facultyEvents.map(event => `<a href="events/faculty/Dance-Group.html" style="text-decoration:none;" onclick="setVariable('${event.name}','${event.time}','${event.contact}','${event.date}','${event.head}');"><li>${event.name}</li></a>`).join('');
 document.getElementById("student-events").innerHTML = studentEvents.map(event => `<a href="events/students/App Development.html" style="text-decoration:none;" onclick="setVariable('${event.name}','${event.time}','${event.contact}','${event.date}','${event.head}');"><li>${event.name}</li></a>`).join('');
-document.getElementById("faculty-sports").innerHTML = facultySports.map(event => `<a href="events/faculty/Dance-Group.html" style="text-decoration:none;" onclick="setVariable('${event.name}','${event.time}','${event.contact}','${event.date}','${event.head}');"><li>${event.name}</li></a>`).join('');
+document.getElementById("faculty-sports").innerHTML = facultySports.map(event => `<a href="events/faculty/Dance-Solo.html" style="text-decoration:none;" onclick="setVariable('${event.name}','${event.time}','${event.contact}','${event.date}','${event.head}');"><li>${event.name}</li></a>`).join('');
 
 function setVariable(value,time,contact,date,head) {
     localStorage.setItem('variable', value);
