@@ -19,13 +19,13 @@ const studentEvents = [{name:'Nail Art',time:'9.30 am to 11. 00 am',date:'19.02.
     {name: 'Dance-Solo',time:'11.30 am to 12.30 pm',date:'24.02.25',head:'Mrs P Senthilkumari, AIDS. ',contact:'7348872039'},
     {name: 'Dance-Group',time:'1.00 pm to 4.00 pm ',date:'24.02.25',head:'Mrs C Preethi, CSBS. ',contact:'9677532525'},
     ];
-const facultySports = [{name: 'Badminton',time:'3.30 pm to 4.20 pm ',date:'24-26th feb',place:'SRL Audithorium',incharge:'Ms.Athira manoj,ECE',contact:'8500437000'},
-    {name: 'Kho-Kho',time:'3.30 pm to 4.20 pm ',date:'24-26th feb',place:'SRL Audithorium',incharge:'Ms.Athira manoj,ECE',contact:'8500437000'},
-    {name:'Chess',time:'3.30 pm to 4.20 pm ',date:'24-26th feb',place:'SRL Audithorium',incharge:'Ms.Athira manoj,ECE',contact:'8500437000'},
-    {name:'Table Tennis',time:'3.30 pm to 4.20 pm ',date:'24-26th feb',place:'SRL Audithorium',incharge:'Ms.Athira manoj,ECE',contact:'8500437000'},
-    {name:'Basketball Free-throw shooting',time:'3.30 pm to 4.20 pm ',date:'24-26th feb',place:'SRL Audithorium',incharge:'Ms.Athira manoj,ECE',contact:'8500437000'},
-    {name:'Tennikoit ball',time:'3.30 pm to 4.20 pm ',date:'24-26th feb',place:'SRL Audithorium',incharge:'Ms.Athira manoj,ECE',contact:'8500437000'},
-    {name:'Throw ball',time:'3.30 pm to 4.20 pm ',date:'24-26th feb',place:'SRL Audithorium',incharge:'Ms.Athira manoj,ECE',contact:'8500437000'},
+const facultySports = [{name: 'Badminton',time:'3.30 pm to 4.20 pm ',date:'24-26th feb',place:'SRL Audithorium',head:'Ms.Athira manoj,ECE',contact:'8500437000'},
+    {name: 'Kho-Kho',time:'3.30 pm to 4.20 pm ',date:'24-26th feb',place:'SRL Audithorium',head:'Ms.Athira manoj,ECE',contact:'8500437000'},
+    {name:'Chess',time:'3.30 pm to 4.20 pm ',date:'24-26th feb',place:'SRL Audithorium',head:'Ms.Athira manoj,ECE',contact:'8500437000'},
+    {name:'Table Tennis',time:'3.30 pm to 4.20 pm ',date:'24-26th feb',place:'SRL Audithorium',head:'Ms.Athira manoj,ECE',contact:'8500437000'},
+    {name:'Basketball Free-throw shooting',time:'3.30 pm to 4.20 pm ',date:'24-26th feb',place:'SRL Audithorium',head:'Ms.Athira manoj,ECE',contact:'8500437000'},
+    {name:'Tennikoit ball',time:'3.30 pm to 4.20 pm ',date:'24-26th feb',place:'SRL Audithorium',head'Ms.Athira manoj,ECE',contact:'8500437000'},
+    {name:'Throw ball',time:'3.30 pm to 4.20 pm ',date:'24-26th feb',place:'SRL Audithorium',head'Ms.Athira manoj,ECE',contact:'8500437000'},
     ];
 
 document.getElementById("faculty-events").innerHTML = facultyEvents.map(event => `<a href="events/faculty/Dance-Group.html" style="text-decoration:none;" onclick="setVariable('${event.name}','${event.time}','${event.contact}','${event.date}','${event.head}');"><li>${event.name}</li></a>`).join('');
