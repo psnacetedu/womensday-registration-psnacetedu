@@ -52,10 +52,6 @@ body {
     } 
 }
 
-.pdf-icon {
-    width: 20px;
-    cursor: pointer;
-}
 
 .container {
     text-align: center;
@@ -96,6 +92,27 @@ body {
     color:transparent;
     background-image:linear-gradient(45deg,rgb(13, 133, 246),pink);
     animation :animate 15s ease infinite;
+}
+ select {
+    appearance: none;
+    background: transparent;
+    border: none;
+    width: 50px; /* Adjust width to match the image */
+    height: 50px; /* Adjust height to match the image */
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    opacity: 0; /* Hide select but keep it functional */
+    cursor: pointer;
+}
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-container img {
+    width: 20px; /* Adjust size */
+    height: 20px;
+    cursor: pointer;
 }
 
 /* {
