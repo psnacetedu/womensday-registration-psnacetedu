@@ -20,7 +20,7 @@ const studentEvents = [{name:'Nail Art',time:'9.30 am to 11. 00 am',date:'18.02.
     ];
 
 document.getElementById("faculty-events").innerHTML = facultyEvents.map(event => `<a href="events/faculty/Dance-Group.html" style="text-decoration:none;" onclick="setVariable('${event.name}','${event.time}','${event.contact}','${event.date}');"><li>${event.name}</li></a>`).join('');
-document.getElementById("student-events").innerHTML = studentEvents.map(event => `<a href="events/students/App Development.html" style="text-decoration:none;" onclick="setVariable('${event.name}','${event.time}','${event.contact}','${event.date}')"><li>${event.name}</li></a>`).join('');
+document.getElementById("student-events").innerHTML = studentEvents.map(event => `<a href="events/students/App Development.html" style="text-decoration:none;" onclick="setVariable('${event.name}','${event.time}','${event.contact}','${event.date}');"><li>${event.name}</li></a>`).join('');
 
 function setVariable(value,time,contact,date) {
     localStorage.setItem('variable', value);
