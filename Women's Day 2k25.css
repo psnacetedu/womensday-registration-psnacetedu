@@ -168,3 +168,57 @@ li:hover {
     background:linear-gradient(60deg,rgb(13, 133, 246),rgb(237, 124, 203),lightpink);
     color: white;
 }
+.bottom-right {
+    position: absolute;
+    bottom: -1180px;
+    right: 0;
+    padding: 10px;
+    background-color: none;
+    font-size: 14px;
+    background: linear-gradient(45deg,pink,rgb(246, 101, 122));
+    color:transparent;
+    background-clip: text;
+}
+.bottom-right:hover{
+    position: absolute;
+    bottom: -1180px;
+    right: 0;
+    padding: 10px;
+    background-color: none;
+    font-size: 14px;
+    background: linear-gradient(45deg,lightpink,rgb(56, 91, 246),rgb(236, 232, 155));
+    color:transparent;
+    background-clip: text;
+    background-size: 400% 400%;
+    animation: animate 5s ease-in-out infinite;
+}
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    25% {
+        background-position: 100% 0;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 0 100%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+/* Responsive Design */
+@media (max-width: 760px) {
+    .events-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .event-box {
+        width: 80%;
+    }
+    .bottom-right {
+        font-size: 12px;
+    }
+}
