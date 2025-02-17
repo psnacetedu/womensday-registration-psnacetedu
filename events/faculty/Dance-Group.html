@@ -121,6 +121,7 @@
             <p>Event: <span class="event-name"></span></p>
             <p>Time: <span class="event-time"></span></p>
             <p>Date: <span class="event-date"></span></p>
+            <p>Incharge: <span class="event-head"></span></p>
             <p>Contact: <span class="event-contact"></span></p>
             <button class="google-form-button" onclick="openGoogleForm()">Register</button>
         </div>
@@ -130,11 +131,13 @@
         const clock = localStorage.getItem('clock');
         const day = localStorage.getItem('day');
         const phone = localStorage.getItem('phone');
+        const head = localStorage.getItem('incharge');
         document.querySelector('.title-class').innerHTML = variable;
         document.querySelector('.event-name').innerHTML = variable;
         document.querySelector('.event-time').innerHTML = clock;
         document.querySelector('.event-date').innerHTML = day;
         document.querySelector('.event-contact').innerHTML = phone;
+        document.querySelector('.event-head').innerHTML = head;
 
         function goBack() {
             window.history.back();
