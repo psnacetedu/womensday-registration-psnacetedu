@@ -40,3 +40,8 @@ function setVariable(value,time,contact,date,head) {
     localStorage.setItem('incharge',head);
 
 }
+function openPDF(url) {
+    if (url) {
+        window.open(url, '');
+    }
+}
